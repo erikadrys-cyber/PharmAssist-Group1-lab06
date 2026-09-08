@@ -1,0 +1,9 @@
+reservation_id,user_id,medicine_id,medicine_name,price,quantity,pharmacy_id,status,claim_code,notes,contact_no,email,time_slot,prescription
+501,40,2,BIOGESIC 250MG SYR 60ML ORANGE,140.57,2,2,Pending,RES-2026-501,Will pick up during morning shift,0906067737,rosesarewhat13@gmail.com,9:00 AM,
+502,43,3,CATAPRES TAB 75MCG,23.15,1,2,Approved,RES-2026-502,For afternoon pickup,09171234567,belle.02345@gmail.com,3:00 PM,PRESC_502.jpg
+503,45,2,BIOGESIC 250MG SYR 60ML ORANGE,140.57,3,2,Pending,RES-2026-503,Will pick up before lunch.,09171234567,testcustomer@gmail.com,10:00 AM,
+504,45,2,BIOGESIC 250MG SYR 60ML ORANGE,140.57,3,2,Pending,RES-2026-504,Will pick up before lunch.,09171234567,testcustomer@gmail.com,10:00 AM,
+505,1,1,ADVIL LIQUIDGEL CAP,7.89,2,2,Pending,RES-2026-505,,09123456789,juan@example.com,10:00 AM,
+506,1,1,ADVIL LIQUIDGEL CAP,7.89,2,2,Pending,RES-2026-506,,09123456789,juan@example.com,10:00 AM,
+507,1,1,ADVIL LIQUIDGEL CAP,7.89,2,2,Pending,RES-2026-507,,09123456789,juan@example.com,10:00 AM,
+508,1,1,ADVIL LIQUIDGEL CAP,7.89,2,2,Pending,RES-2026-508,,09123456789,juan@example.com,10:00 AM,

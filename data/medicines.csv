@@ -1,0 +1,5 @@
+medicine_id,medicine_name,batch_no,category,price,quantity,prescription_required,expiration_date,pharmacy_id,stock_status
+1,ADVIL LIQUIDGEL CAP,25ADM910,Pain Relievers,7.89,143,no,2027-04-30,2,Adequate
+2,BIOGESIC 250MG SYR 60ML ORANGE,L030014,Pain Relievers,140.57,57,no,2027-01-31,2,Adequate
+3,CATAPRES TAB 75MCG,2404018,Hypertension,23.15,89,yes,2029-04-30,2,Adequate
+4,DICLOFENAC FCTAB 100MG (TGP),251865017,Pain Relievers,3.15,212,yes,2028-09-30,2,Adequate

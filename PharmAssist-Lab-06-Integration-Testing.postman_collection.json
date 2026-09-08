@@ -1,0 +1,1135 @@
+{
+  "info": {
+    "_postman_id": "5d316f26-7c52-4ada-96ea-21963ca63d75",
+    "name": "PharmAssist - Lab 06 Integration Testing",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58018160",
+    "_collection_link": "https://go.postman.co/collection/58018160-5d316f26-7c52-4ada-96ea-21963ca63d75?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Reservation Service - Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5001/health",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5001/health",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:07:22 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "48"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"service\": \"reservation-service\",\n  \"status\": \"UP\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "02 - Inventory Service Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5002/health",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5002",
+          "path": [
+            "health"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5002/health",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5002",
+              "path": [
+                "health"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:07:42 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "46"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"service\": \"inventory-service\",\n  \"status\": \"UP\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "03 - Get Medicine - JSON",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:5002/medicines/2",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5002",
+          "path": [
+            "medicines",
+            "2"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:5002/medicines/2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5002",
+              "path": [
+                "medicines",
+                "2"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:07:53 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "247"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"batch_no\": \"L030014\",\n  \"category\": \"Pain Relievers\",\n  \"expiration_date\": \"2027-01-31\",\n  \"medicine_id\": 2,\n  \"medicine_name\": \"BIOGESIC 250MG SYR 60ML ORANGE\",\n  \"pharmacy_id\": 2,\n  \"prescription_required\": \"no\",\n  \"price\": 140.57,\n  \"quantity\": 57,\n  \"stock_status\": \"Adequate\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "04 - Get Medicine - XML",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/xml"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:5002/medicines/2",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5002",
+          "path": [
+            "medicines",
+            "2"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/xml"
+              }
+            ],
+            "url": {
+              "raw": "http://127.0.0.1:5002/medicines/2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5002",
+              "path": [
+                "medicines",
+                "2"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "xml",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:08:03 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/xml; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "431"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "<InventoryResponse><status>success</status><data><medicine_id>2</medicine_id><medicine_name>BIOGESIC 250MG SYR 60ML ORANGE</medicine_name><batch_no>L030014</batch_no><category>Pain Relievers</category><price>140.57</price><quantity>57</quantity><prescription_required>no</prescription_required><expiration_date>2027-01-31</expiration_date><pharmacy_id>2</pharmacy_id><stock_status>Adequate</stock_status></data></InventoryResponse>"
+        }
+      ]
+    },
+    {
+      "name": "05 - Create Reservation - JSON",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user_id\": 45,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 3,\r\n  \"pharmacy_id\": 2,\r\n  \"contact_no\": \"09171234567\",\r\n  \"email\": \"testcustomer@gmail.com\",\r\n  \"time_slot\": \"10:00 AM\",\r\n  \"notes\": \"Will pick up before lunch.\",\r\n  \"prescription\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"user_id\": 45,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 3,\r\n  \"pharmacy_id\": 2,\r\n  \"contact_no\": \"09171234567\",\r\n  \"email\": \"testcustomer@gmail.com\",\r\n  \"time_slot\": \"10:00 AM\",\r\n  \"notes\": \"Will pick up before lunch.\",\r\n  \"prescription\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "CREATED",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:08:19 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "384"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"data\": {\n    \"claim_code\": \"RES-2026-510\",\n    \"contact_no\": \"09171234567\",\n    \"email\": \"testcustomer@gmail.com\",\n    \"medicine_id\": 2,\n    \"medicine_name\": \"BIOGESIC 250MG SYR 60ML ORANGE\",\n    \"notes\": \"Will pick up before lunch.\",\n    \"pharmacy_id\": 2,\n    \"prescription\": \"\",\n    \"price\": 140.57,\n    \"quantity\": 3,\n    \"reservation_id\": 510,\n    \"status\": \"Pending\",\n    \"time_slot\": \"10:00 AM\",\n    \"user_id\": 45\n  },\n  \"message\": \"Reservation created successfully\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "06 - Create Reservation - XML",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/xml"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<ReservationRequest>\r\n    <user_id>48</user_id>\r\n    <medicine_id>2</medicine_id>\r\n    <quantity>2</quantity>\r\n    <pharmacy_id>2</pharmacy_id>\r\n    <contact_no>09171234567</contact_no>\r\n    <email>xmltest@gmail.com</email>\r\n    <time_slot>2:00 PM</time_slot>\r\n    <notes>XML reservation test</notes>\r\n    <prescription></prescription>\r\n</ReservationRequest>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/xml"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<ReservationRequest>\r\n    <user_id>48</user_id>\r\n    <medicine_id>2</medicine_id>\r\n    <quantity>2</quantity>\r\n    <pharmacy_id>2</pharmacy_id>\r\n    <contact_no>09171234567</contact_no>\r\n    <email>xmltest@gmail.com</email>\r\n    <time_slot>2:00 PM</time_slot>\r\n    <notes>XML reservation test</notes>\r\n    <prescription></prescription>\r\n</ReservationRequest>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "CREATED",
+          "code": 201,
+          "_postman_previewlanguage": "xml",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:02:14 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/xml"
+            },
+            {
+              "key": "content-length",
+              "value": "471"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "<reservation><reservation_id>509</reservation_id><user_id>48</user_id><medicine_id>2</medicine_id><medicine_name>BIOGESIC 250MG SYR 60ML ORANGE</medicine_name><price>140.57</price><quantity>2</quantity><pharmacy_id>2</pharmacy_id><notes>XML reservation test</notes><contact_no>09171234567</contact_no><email>xmltest@gmail.com</email><time_slot>2:00 PM</time_slot><prescription>None</prescription><status>Pending</status><claim_code>RES-2026-509</claim_code></reservation>"
+        }
+      ]
+    },
+    {
+      "name": "07 - Missing Required Field",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user_id\": 45,\r\n  \"medicine_id\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"user_id\": 45,\r\n  \"medicine_id\": 3\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "BAD REQUEST",
+          "code": 400,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:31:58 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "199"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"error\": \"Missing required field\",\n  \"fields\": [\n    \"quantity\",\n    \"pharmacy_id\",\n    \"contact_no\",\n    \"email\",\n    \"time_slot\"\n  ],\n  \"message\": \"Please provide all required reservation information before submitting the request.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "08 - Malformed JSON",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user_id\": 45,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 3,",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"user_id\": 45,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 3,",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "BAD REQUEST",
+          "code": 400,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:33:07 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "130"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"error\": \"Malformed JSON\",\n  \"message\": \"The request body contains invalid JSON syntax. Please check the JSON format and try again.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "09 - Malformed XML",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/xml"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<ReservationRequest>\r\n    <user_id>48</user_id>\r\n    <medicine_id>2</medicine_id>\r\n    <quantity>2</quantity>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/xml"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "<ReservationRequest>\r\n    <user_id>48</user_id>\r\n    <medicine_id>2</medicine_id>\r\n    <quantity>2</quantity>",
+              "options": {
+                "raw": {
+                  "language": "xml"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "BAD REQUEST",
+          "code": 400,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:33:23 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "68"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"error\": \"MALFORMED_XML\",\n  \"message\": \"Request body is not valid XML\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "10 - Reservation Not Found",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations/999",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations",
+            "999"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations/999",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations",
+                "999"
+              ]
+            }
+          },
+          "status": "NOT FOUND",
+          "code": 404,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:33:39 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "93"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"error\": \"Reservation not found\",\n  \"message\": \"No reservation exists with reservation ID 999.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "11 - Unsupported Media Type",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "text/plain"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "This is not a JSON request.",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "text/plain"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "This is not a JSON request.",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "UNSUPPORTED MEDIA TYPE",
+          "code": 415,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:33:52 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "113"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"error\": \"Unsupported Content-Type\",\n  \"message\": \"This endpoint only accepts application/json or application/xml.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "12 - Create Reservation - Integrated Transaction",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user_id\": 46,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 1,\r\n  \"pharmacy_id\": 2,\r\n  \"contact_no\": \"09181234567\",\r\n  \"email\": \"integrationtest@gmail.com\",\r\n  \"time_slot\": \"11:00 AM\",\r\n  \"notes\": \"Integration test\",\r\n  \"prescription\": \"\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"user_id\": 46,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 1,\r\n  \"pharmacy_id\": 2,\r\n  \"contact_no\": \"09181234567\",\r\n  \"email\": \"integrationtest@gmail.com\",\r\n  \"time_slot\": \"11:00 AM\",\r\n  \"notes\": \"Integration test\",\r\n  \"prescription\": \"\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "CREATED",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:09:58 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "377"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"data\": {\n    \"claim_code\": \"RES-2026-511\",\n    \"contact_no\": \"09181234567\",\n    \"email\": \"integrationtest@gmail.com\",\n    \"medicine_id\": 2,\n    \"medicine_name\": \"BIOGESIC 250MG SYR 60ML ORANGE\",\n    \"notes\": \"Integration test\",\n    \"pharmacy_id\": 2,\n    \"prescription\": \"\",\n    \"price\": 140.57,\n    \"quantity\": 1,\n    \"reservation_id\": 511,\n    \"status\": \"Pending\",\n    \"time_slot\": \"11:00 AM\",\n    \"user_id\": 46\n  },\n  \"message\": \"Reservation created successfully\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "13 - Create Reservation - Failed Integration",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user_id\": 47,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 1,\r\n  \"pharmacy_id\": 2,\r\n  \"contact_no\": \"09191234567\",\r\n  \"email\": \"failtest@gmail.com\",\r\n  \"time_slot\": \"1:00 PM\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5001/reservations",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5001",
+          "path": [
+            "reservations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Saved Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"user_id\": 47,\r\n  \"medicine_id\": 2,\r\n  \"quantity\": 1,\r\n  \"pharmacy_id\": 2,\r\n  \"contact_no\": \"09191234567\",\r\n  \"email\": \"failtest@gmail.com\",\r\n  \"time_slot\": \"1:00 PM\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5001/reservations",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5001",
+              "path": [
+                "reservations"
+              ]
+            }
+          },
+          "status": "SERVICE UNAVAILABLE",
+          "code": 503,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "server",
+              "value": "Werkzeug/3.1.8 Python/3.14.3"
+            },
+            {
+              "key": "date",
+              "value": "Tue, 08 Sep 2026 10:34:19 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "content-length",
+              "value": "146"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"error\": \"Inventory Service unavailable\",\n  \"message\": \"The reservation cannot be completed because the Inventory Service is currently unavailable.\"\n}"
+        }
+      ]
+    }
+  ]
+}
