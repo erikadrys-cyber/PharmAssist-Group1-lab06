@@ -1,6 +1,6 @@
 # PharmAssist
 
-A microservices-based e-pharmacy backend that lets customers check medicine stock and reserve medicines across multiple pharmacy branches through a Reservation Service and Inventory Service integrated behind a single API Gateway.
+A microservices-based e-pharmacy that lets customers check medicine stock and reserve medicines across multiple pharmacy branches through a Reservation Service and Inventory Service integrated behind a single API Gateway.
 
 ## 1. Project Overview
 
