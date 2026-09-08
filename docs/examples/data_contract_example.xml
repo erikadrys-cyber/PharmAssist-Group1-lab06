@@ -1,0 +1,33 @@
+XML example for Reservation Service
+<?xml version="1.0" encoding="UTF-8"?>
+<ReservationRequest>
+  <user_id>40</user_id>
+  <pharmacy_id>2</pharmacy_id>
+  <medicine_name>BIOGESIC 250MG SYR 60ML ORANGE</medicine_name>
+  <price>140.57</price>
+  <quantity>2</quantity>
+  <notes>Will pick up during morning shift</notes>
+  <contact_no>09760667737</contact_no>
+  <email>rosesarewhat13@gmail.com</email>
+  <time_slot>9:00 AM</time_slot>
+  <prescription>PRESC_1776106.jpg</prescription>
+</ReservationRequest>
+
+
+XML examples for Inventory Service
+<?xml version="1.0" encoding="UTF-8"?>
+<InventoryResponse>
+  <status>success</status>
+  <data>
+    <medicine_id>2</medicine_id>
+    <medicine_name>BIOGESIC 250MG SYR 60ML ORANGE</medicine_name>
+    <batch_no>L030014</batch_no>
+    <category>Pain Relievers</category>
+    <price>140.57</price>
+    <quantity>57</quantity>
+    <prescription_required>no</prescription_required>
+    <expiration_date>2027-01-31</expiration_date>
+    <pharmacy_id>2</pharmacy_id>
+    <stock_status>Adequate</stock_status>
+  </data>
+</InventoryResponse>
